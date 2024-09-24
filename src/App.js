@@ -47,7 +47,11 @@ function App() {
   return (
     <div className="w-full h-full bg-black flex items-center justify-center font-mono p-2">
       <div>
+<<<<<<< HEAD
+        <div className="p-3 max-w-full w-[calc(100vw-10px)] md:w-[400px] min-h-[300px] bg-gray-900 border-[1px] border-gray-800">
+=======
         <div className="p-3 max-w-[400px] min-h-[300px] bg-gray-900 border-[1px] border-gray-800">
+>>>>>>> origin/main
           <h3 className="text-xl text-[#008000] mb-3">Password-Gen</h3>
 
           {/* Character lengths */}
