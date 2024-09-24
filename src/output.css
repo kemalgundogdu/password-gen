@@ -569,12 +569,24 @@ video {
   min-height: 300px;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .w-\[400px\] {
   width: 400px;
 }
 
-.w-full {
-  width: 100%;
+.w-\[calc\(100vw-10px\)\] {
+  width: calc(100vw - 10px);
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-row-reverse {
@@ -706,4 +718,10 @@ video {
 .password {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+@media (min-width: 768px) {
+  .md\:w-\[400px\] {
+    width: 400px;
+  }
 }
