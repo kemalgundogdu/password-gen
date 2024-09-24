@@ -52,58 +52,60 @@ function App() {
 
           {/* Character lengths */}
           <div className="flex flex-col w-full">
-            <label className="text-white">Character Length</label>
-            <input
-              type="range"
-              className="w-full mt-1 accent-gray-600"
-              max="50"
-              min="1"
-              value={length}
-              onChange={handleLengthChange}
-            />
+            <label className="text-white">
+              Character Length
+              <input
+                type="range"
+                className="w-full mt-1 accent-gray-600"
+                max="50"
+                min="1"
+                value={length}
+                onChange={handleLengthChange}
+              />
+            </label>
             <p className="text-white mt-1">Length: {length}</p>
           </div>
 
           {/* Include uppercase */}
           <div className="flex flex-col items-start justify-start mt-3 gap-3">
-            <div className="flex items-center gap-1 flex-row-reverse">
-              <label className="text-white text-sm">Include Uppercase</label>
+            <label className="text-white text-sm flex items-center gap-1 flex-row-reverse">
+              Include Uppercase
               <input
                 type="checkbox"
                 checked={includeUppercase}
                 onChange={() => setIncludeUppercase(!includeUppercase)}
               />
-            </div>
+            </label>
 
             {/* Include lowercase */}
-            <div className="flex items-center gap-1 flex-row-reverse">
-              <label className="text-white text-sm">Include Lowercase</label>
+            <label className="text-white text-sm flex items-center gap-1 flex-row-reverse">
+              Include Lowercase
               <input
                 type="checkbox"
                 checked={includeLowercase}
                 onChange={() => setIncludeLowercase(!includeLowercase)}
               />
-            </div>
+            </label>
 
             {/* Include numbers */}
-            <div className="flex items-center gap-1 flex-row-reverse">
-              <label className="text-white text-sm">Include Numbers</label>
+            <label className="text-white text-sm flex items-center gap-1 flex-row-reverse">
+              Include Numbers
               <input
                 type="checkbox"
                 checked={includeNumbers}
                 onChange={() => setIncludeNumbers(!includeNumbers)}
               />
-            </div>
+            </label>
 
             {/* Include symbols */}
-            <div className="flex items-center gap-1 flex-row-reverse">
-              <label className="text-white text-sm">Include Symbols</label>
+            <label className="text-white text-sm flex items-center gap-1 flex-row-reverse">
+              Include Symbols
               <input
                 type="checkbox"
                 checked={includeSymbols}
                 onChange={() => setIncludeSymbols(!includeSymbols)}
               />
-            </div>
+            </label>
 
             {/* Generate password */}
             <button
