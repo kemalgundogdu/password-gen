@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .password::-webkit-scrollbar {
+        display: none;
+    }
+    .password {
+        -ms-overflow-style: none;  
+        scrollbar-width: none; 
+  }
+}
