@@ -4,7 +4,7 @@ Home Page
 ![Password Generator](./passwordgen.png)
 
 # EN - Password Generator App
-
+ 
 This project is a password generator application where users can create random passwords with customizable character types.
 
 ## Features
